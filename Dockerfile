@@ -14,4 +14,4 @@ RUN chmod +x /pb/pocketbase
 EXPOSE 8090
 
 # Force delete data on start (Good for Free Plan testing)
-CMD sh -c "rm -rf /pb/pb_data/* && /pb/pocketbase serve --http 0.0.0.0:8090"
+CMD sh -c "rm -rf /pb/pb_data && /pb/pocketbase serve --http 0.0.0.0:8090"
